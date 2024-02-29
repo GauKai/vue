@@ -1,6 +1,4 @@
 <script>
-import vueLogo from '@/assets/images/logo.svg';
-
 export default {
   data() {
     return {
@@ -37,8 +35,8 @@ export default {
       <button type="button" class="nav-btn" @click="changeColor(switchType=2)">姓名</button>
       <button type="button" class="nav-btn" @click="changeColor(switchType=3)">喜歡的食物</button>
     </nav>
-    <div class="content" :class="color" v-if="switchType === 0"><img :src="vueLogo" alt="Vue Logo" class="w-1/2 h-1/2"></div>
-    <div class="content" :class="color" v-else-if="switchType === 1">{{ num }}</div>
+    <!-- <div class="content" :class="color" v-if="switchType === 0"><img :src="vueLogo" alt="Vue Logo" class="w-1/2 h-1/2"></div> -->
+    <div class="content" :class="color" v-if="switchType === 1">{{ num }}</div>
     <div class="content" :class="color" v-else-if="switchType === 2">{{ name }}</div>
     <div class="content" :class="color" v-else-if="switchType === 3">{{ food }}</div>
     <!-- <div class="">
