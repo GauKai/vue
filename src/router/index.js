@@ -23,6 +23,11 @@ const router = createRouter({
       component: date0227
     },
     {
+      path: '/practice-one',
+      name: 'practice-one',
+      component: () => import('../views/PracticeOneView.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
